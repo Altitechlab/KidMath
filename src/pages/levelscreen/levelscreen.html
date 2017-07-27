@@ -1,0 +1,34 @@
+<!--
+  Generated template for the Levelscreen page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>levelscreen</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="button level-btn" (click)="goToAddition(1)">
+        LEVEL 1
+    </div>
+
+    <div class="button level-btn" [navPush]="subtractionPage">
+        LEVEL 2
+    </div>
+
+    <div class="button level-btn" [navPush]="mutiplicationPage">
+        LEVEL 3
+    </div>
+
+
+    <div class="button level-btn" [navPush]="divisionPage">
+        LEVEL 4
+    </div>
+
+</ion-content>
